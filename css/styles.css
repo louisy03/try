@@ -1,0 +1,53 @@
+.body-login-register{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo.jpg');
+    background-size: 100%; /* Ajusta el valor según el nivel de zoom deseado */
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+
+}
+
+.image-upload {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-upload i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.image-upload input[type="file"]:focus + i {
+    opacity: 0; 
+}
+
+
